@@ -33,3 +33,11 @@ The second step is to build your local copy. That is done with
 ```shell
 pip install .
 ```
+
+# Validating the installation
+
+In order to validate the installation we run the help for dnsinfo.
+
+```shell
+dnsinfo -h
+```
