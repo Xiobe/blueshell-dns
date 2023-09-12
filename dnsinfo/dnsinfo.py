@@ -5,9 +5,7 @@ __prog__ = f"dnsinfo.py {__version__}"
 __description__ = 'DNS information'
 
 import argparse
-
-class DNSinfo:
-    pass
+import dns.resolver
 
 def main():
     parser = argparse.ArgumentParser(prog=__prog__, description=__description__)
@@ -16,8 +14,10 @@ def main():
     parser.add_argument('--format', choices=['json','csv'], help='output format to be used with --outputfile.')
     args = parser.parse_args()
 
-    dnsinfo = DNSInfo()
-    print("Hello from dnsinfo")
+    # A records
+    answers = dns.resolver.resolve(args.domain, 'A')
+    for answer in answers:
+        print(answer)
 
 if __name__ == '__main__':
     main()
