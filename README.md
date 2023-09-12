@@ -25,3 +25,11 @@ The next step is to bring pip up-to-date
 ```shell
 python -m pip install --upgrade pip
 ```
+
+# Building DNS info
+
+The second step is to build your local copy. That is done with
+
+```shell
+pip install .
+```
