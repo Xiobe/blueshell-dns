@@ -17,6 +17,7 @@ def main():
     args = parser.parse_args()
 
     dnsinfo = DNSInfo()
+    print("Hello from dnsinfo")
 
 if __name__ == '__main__':
     main()
