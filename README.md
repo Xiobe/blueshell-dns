@@ -18,7 +18,7 @@ python -m venv venv
 
 To activate your venv you run
 ```shell
-source venv venv/bin/activate
+source venv/bin/activate
 ```
 
 The next step is to bring pip up-to-date
