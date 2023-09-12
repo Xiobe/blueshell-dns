@@ -1,2 +1,1 @@
-# blueshell-dns
-Blueshell DNS Module 
+# DNS info
